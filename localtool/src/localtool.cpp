@@ -12,5 +12,6 @@ using namespace std;
 int main() {
 	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
 	cout << "This App shows Data" << endl;
+	cout << "Test the process of github with eclipse" << endl;
 	return 0;
 }
