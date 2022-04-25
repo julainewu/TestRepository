@@ -8,44 +8,32 @@
 
 #include <iostream>
 
+#include <math.h>
+#include<cstdlib>
+#include<string>
+#include<vector>
+#include<numeric>
+#include<sstream>
+#include<ctime>
+#include<cmath>
 
 using namespace std;
 
 int Calculator (int num1, int num2, int option);
+//bool isPalindrome(int number);
+int ticket_price(int person);
 
 int main() {
 
-	/*int option;
-	option = 1;
+	int price;
+	price = ticket_price(5);
+	cout<<"Ticket price = " << price <<endl;
 
-	int num1 =10, num2 = 5;
-
-	cout << "The addition result is = " << Calculator (num1, num2, option);*/
-
-	char setOperator;
-	float firstNum = 0.00, secondNum = 0.00;
-	cout << "Enter your operator: +, -, *, /: \n";
-	cin >> setOperator;
-	cout <<"Enter your first calculation:  \n";
-	cin >> firstNum;
-	cout <<" Enter your second calculation:  \n";
-	cin >> secondNum;
-
-	switch (setOperator) {
-	case '+':
-		cout << "The answer is: " << firstNum + secondNum;
-		break;
-	case '-':
-		cout << "The answer is: " << firstNum - secondNum;
-		break;
-	case '*':
-		cout << "The answer is: " << firstNum * secondNum;
-		break;
-	case '/':
-		cout << "The answer is: " << firstNum / secondNum;
-		break;
-
-	}
-
+	int num1 = 2, num2 = 2;
+	int option = 1;
+	int result = Calculator(num1, num2, option);
+	cout <<"The value of result is " << result <<endl;
 	return 0;
 }
+
+
